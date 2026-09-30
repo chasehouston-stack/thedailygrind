@@ -1,0 +1,299 @@
+/* Bean Haven Cafe - CS 310 Project 2 */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4f1ec;
+    color: #333;
+}
+
+header {
+    background-color: #5c3d2e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+}
+
+nav {
+    background-color: #8b5e3c;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd9b3;
+}
+
+main {
+    max-width: 950px;
+    margin: auto;
+    padding: 25px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #5c3d2e;
+    text-align: center;
+}
+
+h3 {
+    color: #5c3d2e;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.mission, .story, .about-section, .menu-section, .location-section, .video-section, .map-section {
+    background-color: #faf6f0;
+    border: 1px solid #d8c4ad;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.video, .map {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto 0 auto;
+}
+
+.menu-list {
+    list-style-type: square;
+    padding-left: 25px;
+}
+
+.menu-list li {
+    margin-bottom: 14px;
+    font-size: 18px;
+}
+
+.menu-list strong {
+    float: right;
+    color: #5c3d2e;
+}
+
+.combo-list {
+    line-height: 2;
+    font-size: 17px;
+}
+
+/* CSS FlexBox - two menu columns */
+.menu-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.menu-column {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.menu-column h3 {
+    text-align: center;
+    color: #5c3d2e;
+}
+
+.special-list {
+    list-style-type: circle;
+    padding-left: 25px;
+    color: #5c3d2e;
+}
+
+.special-list li {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: white;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #e7d4bd;
+    color: #5c3d2e;
+}
+
+.social {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.social:hover {
+    color: #ffd9b3;
+}
+
+footer {
+    background-color: #5c3d2e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer p {
+    color: white;
+    margin: 7px;
+}
+
+@media (max-width: 700px) {
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    .menu-columns {
+        flex-direction: column;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+
+/* Lab 2 - Customer Form */
+.form-section {
+    max-width: 720px;
+    margin: 30px auto;
+}
+
+form {
+    width: 100%;
+}
+
+fieldset {
+    border: 1px solid #c8b7a8;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #ffffff;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.form-buttons input {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer-link {
+    color: white;
+}
+
+/* Responsive design for Lab 2 */
+img, iframe {
+    max-width: 100%;
+}
+
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    main {
+        width: 94%;
+        margin: auto;
+    }
+
+    .menu-columns {
+        flex-direction: column;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    footer {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
